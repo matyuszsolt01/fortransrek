@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>ForTransRek S.R.L</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ForTransRek S.R.L — Fakitermelés, erdészeti szolgáltatások és faanyag szállítás Románia területén.">
+    <link rel="icon" type="image/png" href="img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+    <a href="tel:+40748917040" class="call-button">
+    <span class="call-button-icon">📞</span>
+    Hívás most
+    </a>
+    
+    <div id="loader">
+    <div class="loader-icon">🪵</div>
+    <div class="loader-text">ForTransRek</div>
+    </div>
+
+<header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li class="social-nav">
+               <a href="https://www.facebook.com/profile.php?id=61580723392809" target="_blank" rel="noopener" class="social-nav-link" title="Facebook">
+             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+             </svg>
+               </a>
+           </li>
+           <li class="nav-spacer"></li>
+           <li><a href="index.html"><span data-i18n="home">Főoldal</span></a></li>
+           <li><a href="termekeink.html"><span data-i18n="products">Termékeink</span></a></li>
+           <li><a href="szallitas.html"><span data-i18n="transport">Szállítás</span></a></li>
+           <li><a href="kapcsolat.html"><span data-i18n="contact">Kapcsolat</span></a></li>
+           <li class="lang-switch">
+        <button onclick="setLanguage('hu')" class="lang-btn" title="Magyar">🇭🇺</button>
+        <button onclick="setLanguage('ro')" class="lang-btn" title="Română">🇷🇴</button>
+           </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- NYELVVÁLASZTÓ HERO -->
+<section class="hero" id="hero">
+    <div class="hero-card reveal">
+        <h1>ForTransRek S.R.L</h1>
+        <p data-i18n="hero_subtitle">Fakitermelés és erdészeti szolgáltatások</p>
+        <p data-i18n="choose_lang" style="margin-bottom: 25px; font-size: 1.1rem;">Válassz nyelvet / Alege limba</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <button onclick="setLanguage('hu')" style="background: #8bc34a; color: #1a1a1a; padding: 15px 35px; border: none; border-radius: 50px; font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">🇭🇺 Magyar</button>
+            <button onclick="setLanguage('ro')" style="background: #8bc34a; color: #1a1a1a; padding: 15px 35px; border: none; border-radius: 50px; font-size: 18px; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">🇷🇴 Română</button>
+        </div>
+    </div>
+</section>
+
+<!-- TARTALOM -->
+<main id="content" class="hidden">
+
+    <section class="page-hero reveal">
+        <div class="page-badge">
+            <span class="page-badge-icon">🌲</span>
+            <h1 data-i18n="welcome">Üdvözlünk</h1>
+        </div>
+        <div class="page-badge page-badge-text" data-i18n="welcome_text">
+            Erdészeti szolgáltatások és faanyag szállítás – gyorsan, megbízhatóan, Románia egész területén.
+        </div>
+    </section>
+
+    <section class="section reveal">
+        <h2 data-i18n="services_title">Szolgáltatásaink</h2>
+        <div class="cards">
+            <a href="termekeink.html" class="card service-card">
+                <span class="service-icon">🪚</span>
+                <h3 data-i18n="service_lumber">Fűrészáru</h3>
+                <p data-i18n="service_lumber_desc">Minőségi fűrészáru széles választékban.</p>
+            </a>
+            <a href="szallitas.html" class="card service-card">
+                <span class="service-icon">🚛</span>
+                <h3 data-i18n="service_transport">Szállítás</h3>
+                <p data-i18n="service_transport_desc">Faanyag szállítás rövid határidővel, saját flottával.</p>
+            </a>
+            <a href="erdotisztitas.html" class="card service-card">
+                <span class="service-icon">🌿</span>
+                <h3 data-i18n="service_cleaning">Erdőtisztítás</h3>
+                <p data-i18n="service_cleaning_desc">Terület előkészítés, erdőápolás, tisztítás.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="section cta-section reveal">
+        <div class="cta-box">
+            <h2 data-i18n="cta_question">Kérdésed van?</h2>
+            <p data-i18n="cta_text">Keress minket bizalommal – válaszolunk minden megkeresésre.</p>
+            <a href="kapcsolat.html" class="cta-button"><span data-i18n="cta_button">Kapcsolatfelvétel</span> →</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>ForTransRek S.R.L</h3>
+        <p data-i18n="footer_desc">Fakitermelés és erdészeti szolgáltatások</p>
+        <p class="footer-copy">© 2026 ForTransRek S.R.L - <span data-i18n="footer_rights">Minden jog fenntartva</span></p>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+<!-- COOKIE SÁV -->
+<div class="cookie-bar" id="cookieBar">
+    <span class="cookie-text">
+        🍪 <span data-i18n="cookie_text">Ez az oldal sütiket használ a jobb felhasználói élmény érdekében. Az oldal használatával elfogadod a sütik használatát.</span>
+        <a href="#" onclick="openCookieModal(); return false;" data-i18n="cookie_link">További információk</a>
+    </span>
+    <div class="cookie-buttons">
+        <button class="cookie-btn-accept" onclick="acceptCookies()" data-i18n="cookie_accept">Elfogadom</button>
+        <button class="cookie-btn-more" onclick="acceptCookies()" data-i18n="cookie_more">Bezár</button>
+    </div>
+</div>
+
+<!-- COOKIE MODAL -->
+<div class="cookie-modal-overlay" id="cookieModal">
+    <div class="cookie-modal">
+        <button class="cookie-modal-close" onclick="closeCookieModal()">✕</button>
+        <h2 data-i18n="cookie_modal_title">Süti (Cookie) Tájékoztató</h2>
+        <p data-i18n="cookie_modal_p1">Weboldalunk sütiket (cookie-kat) használ a megfelelő működés és a jobb felhasználói élmény biztosítása érdekében.</p>
+        <p data-i18n="cookie_modal_p2"><strong>Mi az a süti?</strong> A süti egy kis adatfájl, amit a böngésződ tárol el a weboldalunkról. Ezek segítenek megjegyezni a beállításaidat (például a választott nyelvet), így nem kell minden alkalommal újra beállítanod.</p>
+        <p data-i18n="cookie_modal_p3"><strong>Milyen sütiket használunk?</strong> Kizárólag működéshez szükséges sütiket használunk — például a nyelvválasztás megjegyzéséhez. Nem használunk harmadik féltől származó nyomkövető sütiket (Google Analytics, Facebook pixel stb.).</p>
+        <p data-i18n="cookie_modal_p4"><strong>Hogyan tudod kikapcsolni?</strong> A böngésződ beállításaiban bármikor letilthatod vagy törölheted a sütiket. Ez azonban befolyásolhatja az oldal működését.</p>
+        <p data-i18n="cookie_modal_p5">Az oldal használatával elfogadod a sütik használatát. Ha bármilyen kérdésed van, vedd fel velünk a kapcsolatot.</p>
+        <button class="cookie-modal-btn" onclick="acceptCookiesFromModal()" data-i18n="cookie_accept">Rendben, elfogadom</button>
+    </div>
+</div>
+
+<script>
+
+    // Cookie modal
+function openCookieModal() {
+    document.getElementById("cookieModal").classList.add("active");
+}
+
+function closeCookieModal() {
+    document.getElementById("cookieModal").classList.remove("active");
+}
+
+function acceptCookiesFromModal() {
+    closeCookieModal();
+    acceptCookies();
+}
+
+// Kattintás a sötét háttérre bezárja
+document.addEventListener("click", function(e) {
+    if (e.target.id === "cookieModal") {
+        closeCookieModal();
+    }
+});
+
+    // Cookie elfogadás
+function acceptCookies() {
+    const cookieBar = document.getElementById("cookieBar");
+    if (cookieBar) {
+        cookieBar.classList.add("hidden-cookie");
+        localStorage.setItem("cookiesAccepted", "true");
+    }
+}
+
+// Betöltéskor ellenőrizzük
+window.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        const cookieBar = document.getElementById("cookieBar");
+        if (cookieBar) {
+            cookieBar.classList.add("hidden-cookie");
+        }
+    }
+});
+</script>
+
+</body>
+</html>

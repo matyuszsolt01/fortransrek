@@ -1,0 +1,284 @@
+/* =======================================================
+   MOBIL STÍLUSOK — ForTransRek S.R.L
+   Külön fájl a reszponzív nézethez
+======================================================= */
+
+/* =======================================================
+   MOBIL (max 768px)
+======================================================= */
+
+@media (max-width: 768px) {
+
+    /* --- HAMBURGER --- */
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        z-index: 1100;
+        background: rgba(20,20,20,0.8);
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* --- NAVBAR --- */
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        width: 100%;
+        opacity: 0;
+        transition: 0.3s ease;
+        padding: 0;
+    }
+
+    nav ul.active {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    nav ul li {
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .nav-spacer {
+        display: none;
+    }
+
+    .social-nav {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .lang-switch {
+        justify-content: center;
+        margin-left: 0;
+        padding: 8px 0;
+    }
+
+    /* --- HERO --- */
+    .hero-card {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .hero-card h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-card p {
+        font-size: 1rem;
+    }
+
+    /* --- CONTAINER --- */
+    .container {
+        margin: 20px 10px;
+        padding: 25px 15px;
+    }
+
+    /* --- SZÖVEGEK --- */
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    h2::after {
+        width: 50px;
+        height: 3px;
+    }
+
+    /* --- PAGE BADGE --- */
+    .page-badge {
+        padding: 10px 20px;
+        gap: 8px;
+    }
+
+    .page-badge h1 {
+        font-size: 1.4rem;
+    }
+
+    .page-badge-icon {
+        font-size: 1.4rem;
+    }
+
+    .page-badge-text {
+        max-width: 90%;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .page-hero {
+        padding: 20px 10px 5px;
+    }
+
+    .page-hero p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+
+    /* --- KÁRTYÁK --- */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* --- TERMÉKKÁRTYÁK --- */
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* --- KATEGÓRIA KÁRTYÁK --- */
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* --- LÉPÉSEK --- */
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        max-width: 90%;
+    }
+
+    .step-arrow {
+        display: none;
+    }
+
+    /* --- CTA --- */
+    .cta-box {
+        padding: 25px 20px;
+        max-width: 90%;
+    }
+
+    .cta-box h2 {
+        font-size: 1.3rem;
+    }
+
+    /* --- ŰRLAP --- */
+    .contact-form {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    /* --- ELÉRHETŐSÉGEK --- */
+    .contact-details {
+        max-width: 100%;
+    }
+
+    .contact-item {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .contact-item span {
+        font-size: 0.9rem;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        padding: 25px 15px;
+    }
+
+    .footer-content h3 {
+        font-size: 1.3rem;
+    }
+
+    /* --- HOVER HINT --- */
+    .hover-hint {
+        max-width: 90%;
+        font-size: 0.85rem;
+        padding: 10px 18px;
+    }
+
+    /* --- COOKIE --- */
+    .cookie-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 14px 15px 80px 15px;
+    }
+
+    .cookie-text {
+        font-size: 0.8rem;
+    }
+
+    .cookie-btn-accept,
+    .cookie-btn-more {
+        padding: 8px 18px;
+        font-size: 0.8rem;
+    }
+
+    .cookie-modal {
+        padding: 20px 15px;
+    }
+
+    /* --- HÍVÁS GOMB --- */
+    .call-button {
+        display: flex;
+    }
+}
+
+/* =======================================================
+   KIS MOBIL (max 480px)
+======================================================= */
+
+@media (max-width: 480px) {
+
+    .hero-card h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-card button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 20px 10px;
+        margin: 10px 5px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .page-badge h1 {
+        font-size: 1.2rem;
+        white-space: normal;
+    }
+
+    .page-badge {
+        padding: 8px 16px;
+    }
+}

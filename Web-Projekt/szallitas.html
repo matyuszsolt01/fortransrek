@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Szállítás - ForTransRek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ForTransRek S.R.L faanyag szállítás — gyorsan, biztonságosan, saját flottával.">
+    <link rel="icon" type="image/png" href="img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li class="back-button">
+                <a href="index.html">← <span data-i18n="back">Vissza</span></a>
+            </li>
+            <li><a href="index.html"><span data-i18n="home">Főoldal</span></a></li>
+            <li><a href="termekeink.html"><span data-i18n="products">Termékeink</span></a></li>
+            <li><a href="szallitas.html"><span data-i18n="transport">Szállítás</span></a></li>
+            <li><a href="kapcsolat.html"><span data-i18n="contact">Kapcsolat</span></a></li>
+            <li class="lang-switch">
+        <button onclick="setLanguage('hu')" class="lang-btn" title="Magyar">🇭🇺</button>
+        <button onclick="setLanguage('ro')" class="lang-btn" title="Română">🇷🇴</button>
+    </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="page-hero">
+        <div class="page-badge">
+            <span class="page-badge-icon">🚛</span>
+            <h1 data-i18n="transport">Szállítás</h1>
+        </div>
+        <div class="page-badge page-badge-text" data-i18n="transport_text">
+            Faanyag szállítás gyorsan, biztonságosan és megbízhatóan.
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 data-i18n="how_works">Hogyan működik?</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon">📋</div>
+                <h3 data-i18n="step1_title">1. Megrendelés</h3>
+                <p data-i18n="step1_text">Vedd fel velünk a kapcsolatot, és add meg a kívánt faanyag típusát és mennyiségét.</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-icon">📞</div>
+                <h3 data-i18n="step2_title">2. Egyeztetés</h3>
+                <p data-i18n="step2_text">Pontosítjuk a mennyiséget, a szállítási címet és a neked megfelelő időpontot.</p>
+            </div>
+            <div class="step-arrow">→</div>
+            <div class="step">
+                <div class="step-icon">🚛</div>
+                <h3 data-i18n="step3_title">3. Kiszállítás</h3>
+                <p data-i18n="step3_text">Saját flottánkkal, gyorsan és biztonságosan házhoz szállítjuk a faanyagot.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 data-i18n="conditions_title">Szállítási feltételek</h2>
+        <div class="conditions-grid">
+            <div class="condition-item">
+                <span class="condition-icon">📦</span>
+                <span class="condition-text"><strong data-i18n="cond1_title">Minimum rendelés:</strong> <span data-i18n="cond1_text">5 m³ faanyag</span></span>
+            </div>
+            <div class="condition-item">
+                <span class="condition-icon">🗺️</span>
+                <span class="condition-text"><strong data-i18n="cond2_title">Szállítási terület:</strong> <span data-i18n="cond2_text">Románia teljes területe</span></span>
+            </div>
+            <div class="condition-item">
+                <span class="condition-icon">🌍</span>
+                <span class="condition-text"><strong data-i18n="cond3_title">Külföldi szállítás:</strong> <span data-i18n="cond3_text">egyedi egyeztetéssel</span></span>
+            </div>
+            <div class="condition-item">
+                <span class="condition-icon">🏗️</span>
+                <span class="condition-text"><strong data-i18n="cond4_title">Rakodás:</strong> <span data-i18n="cond4_text">saját gépparkkal</span></span>
+            </div>
+            <div class="condition-item">
+                <span class="condition-icon">⏱️</span>
+                <span class="condition-text"><strong data-i18n="cond5_title">Kiszállítás:</strong> <span data-i18n="cond5_text">24–72 órán belül</span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 data-i18n="fleet_title">Flottánk</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="img/man.jpg" alt="MAN teherautó">
+                <h3>MAN 12.5t</h3>
+                <p class="short" data-i18n="fleet1_short">Nagy kapacitású faanyag szállítás</p>
+                <div class="details">
+                    <p><strong data-i18n="capacity">Teherbírás:</strong> 12.5 tonna</p>
+                    <p><strong data-i18n="usage">Felhasználás:</strong> <span data-i18n="fleet1_usage">hosszú távú szállítás</span></p>
+                    <p><strong data-i18n="loading">Rakodás:</strong> <span data-i18n="fleet1_loading">darus / gépi</span></p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="img/fleet/iveco.jpeg" alt="Iveco platós">
+                <h3>Iveco platós</h3>
+                <p class="short" data-i18n="fleet2_short">Rugalmas kisebb szállítások</p>
+                <div class="details">
+                    <p><strong data-i18n="capacity">Teherbírás:</strong> <span data-i18n="fleet2_capacity">kisebb szállítások</span></p>
+                    <p><strong data-i18n="usage">Felhasználás:</strong> <span data-i18n="fleet2_usage">helyi fuvarok</span></p>
+                    <p><strong data-i18n="advantage">Előny:</strong> <span data-i18n="fleet2_advantage">gyors, mozgékony</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2 data-i18n="cta_ready">Készen állsz a rendelésre?</h2>
+            <p data-i18n="cta_text">Keress minket bizalommal — egyedi igényekre is adunk ajánlatot.</p>
+            <a href="kapcsolat.html" class="cta-button"><span data-i18n="cta_button">Kapcsolatfelvétel</span> →</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>ForTransRek S.R.L</h3>
+        <p data-i18n="footer_desc">Fakitermelés és erdészeti szolgáltatások</p>
+        <p class="footer-copy">© 2026 ForTransRek S.R.L - <span data-i18n="footer_rights">Minden jog fenntartva</span></p>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script>
+    const lang = localStorage.getItem("lang") || "hu";
+    document.documentElement.lang = lang;
+    applyTranslations(lang);
+
+    function toggleMenu() {
+        document.querySelector("nav ul").classList.toggle("active");
+    }
+
+    // Cookie elfogadás
+    function acceptCookies() {
+    const cookieBar = document.getElementById("cookieBar");
+    if (cookieBar) {
+        cookieBar.classList.add("hidden-cookie");
+        localStorage.setItem("cookiesAccepted", "true");
+    }
+} 
+
+// Betöltéskor ellenőrizzük
+window.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        const cookieBar = document.getElementById("cookieBar");
+        if (cookieBar) {
+            cookieBar.classList.add("hidden-cookie");
+        }
+    }
+});
+</script>
+
+
+<!-- COOKIE SÁV -->
+<div class="cookie-bar" id="cookieBar">
+    <span class="cookie-text">
+        🍪 <span data-i18n="cookie_text">Ez az oldal sütiket használ a jobb felhasználói élmény érdekében. Az oldal használatával elfogadod a sütik használatát.</span>
+        <a href="#" data-i18n="cookie_link">További információk</a>
+    </span>
+    <div class="cookie-buttons">
+        <button class="cookie-btn-accept" onclick="acceptCookies()" data-i18n="cookie_accept">Elfogadom</button>
+        <button class="cookie-btn-more" onclick="acceptCookies()" data-i18n="cookie_more">Bezár</button>
+    </div>
+</div>
+
+</body>
+</html>

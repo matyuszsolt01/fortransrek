@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Fűrészáru - ForTransRek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ForTransRek S.R.L fűrészáru kínálata — deszka, gerenda, gyalult faanyag széles választékban.">
+    <link rel="icon" type="image/png" href="img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li class="back-button">
+                <a href="termekeink.html">← <span data-i18n="back">Vissza</span></a>
+            </li>
+            <li><a href="index.html"><span data-i18n="home">Főoldal</span></a></li>
+            <li><a href="termekeink.html"><span data-i18n="products">Termékeink</span></a></li>
+            <li><a href="szallitas.html"><span data-i18n="transport">Szállítás</span></a></li>
+            <li><a href="kapcsolat.html"><span data-i18n="contact">Kapcsolat</span></a></li>
+            <li class="lang-switch">
+        <button onclick="setLanguage('hu')" class="lang-btn" title="Magyar">🇭🇺</button>
+        <button onclick="setLanguage('ro')" class="lang-btn" title="Română">🇷🇴</button>
+    </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="page-hero">
+        <div class="page-badge">
+            <span class="page-badge-icon">🪚</span>
+            <h1 data-i18n="lumber_title">Fűrészáru</h1>
+        </div>
+        <div class="page-badge page-badge-text" data-i18n="lumber_text">
+            Minőségi fűrészáru — deszkák, gerendák és gyalult faanyagok széles választékban.
+        </div>
+    </div>
+
+    <div class="hover-hint">
+        <span class="hover-hint-icon">👆</span>
+        <span data-i18n="hover_hint">Húzd az egeret a termékek fölé a részletekért</span>
+    </div>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="img/deszka.jpg" alt="Deszka 40mm">
+            <h3>🪵 <span data-i18n="lumber1_name">Deszka 40mm</span></h3>
+            <p class="short" data-i18n="lumber1_short">Szárított gyalult faanyag</p>
+            <div class="details">
+                <p><strong data-i18n="size">Méret:</strong> 40mm</p>
+                <p><strong data-i18n="price">Ár:</strong> 180 €/m³</p>
+                <p><strong data-i18n="humidity">Nedvesség:</strong> 12%</p>
+                <p><strong data-i18n="length">Hossz:</strong> 2–5m</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/gerenda.jpg" alt="Gerenda 50mm">
+            <h3>🏗️ <span data-i18n="lumber2_name">Gerenda 50mm</span></h3>
+            <p class="short" data-i18n="lumber2_short">Ipari szerkezeti faanyag</p>
+            <div class="details">
+                <p><strong data-i18n="size">Méret:</strong> 50mm</p>
+                <p><strong data-i18n="price">Ár:</strong> 220 €/m³</p>
+                <p><strong data-i18n="humidity">Nedvesség:</strong> 15%</p>
+                <p><strong data-i18n="length">Hossz:</strong> 3–6m</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/deszka2.jpg" alt="Deszka 25mm">
+            <h3>🌿 <span data-i18n="lumber3_name">Deszka 25mm</span></h3>
+            <p class="short" data-i18n="lumber3_short">Friss vágású természetes fa</p>
+            <div class="details">
+                <p><strong data-i18n="size">Méret:</strong> 25mm</p>
+                <p><strong data-i18n="price">Ár:</strong> 150 €/m³</p>
+                <p><strong data-i18n="humidity">Nedvesség:</strong> 20%</p>
+                <p><strong data-i18n="length">Hossz:</strong> 2–4m</p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="img/gyalult.jpg" alt="Gyalult deszka">
+            <h3>✨ <span data-i18n="lumber4_name">Gyalult deszka</span></h3>
+            <p class="short" data-i18n="lumber4_short">Belső építészeti felhasználás</p>
+            <div class="details">
+                <p><strong data-i18n="size">Méret:</strong> 20–40mm</p>
+                <p><strong data-i18n="price">Ár:</strong> 260 €/m³</p>
+                <p><strong data-i18n="humidity">Nedvesség:</strong> 10–12%</p>
+                <p><strong data-i18n="surface">Felület:</strong> <span data-i18n="lumber4_surface">Gyalult, simított</span></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2 data-i18n="cta_ready">Készen állsz a rendelésre?</h2>
+            <p data-i18n="cta_text">Keress minket bizalommal — egyedi igényekre is adunk ajánlatot.</p>
+            <a href="kapcsolat.html" class="cta-button"><span data-i18n="cta_button">Kapcsolatfelvétel</span> →</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>ForTransRek S.R.L</h3>
+        <p data-i18n="footer_desc">Fakitermelés és erdészeti szolgáltatások</p>
+        <p class="footer-copy">© 2026 ForTransRek S.R.L - <span data-i18n="footer_rights">Minden jog fenntartva</span></p>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script>
+    const lang = localStorage.getItem("lang") || "hu";
+    document.documentElement.lang = lang;
+    applyTranslations(lang);
+
+    function toggleMenu() {
+        document.querySelector("nav ul").classList.toggle("active");
+    }
+    // Cookie elfogadás
+function acceptCookies() {
+    const cookieBar = document.getElementById("cookieBar");
+    if (cookieBar) {
+        cookieBar.classList.add("hidden-cookie");
+        localStorage.setItem("cookiesAccepted", "true");
+    }
+}
+
+// Betöltéskor ellenőrizzük
+window.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        const cookieBar = document.getElementById("cookieBar");
+        if (cookieBar) {
+            cookieBar.classList.add("hidden-cookie");
+        }
+    }
+});
+</script>
+
+<!-- COOKIE SÁV -->
+<div class="cookie-bar" id="cookieBar">
+    <span class="cookie-text">
+        🍪 <span data-i18n="cookie_text">Ez az oldal sütiket használ a jobb felhasználói élmény érdekében. Az oldal használatával elfogadod a sütik használatát.</span>
+        <a href="#" data-i18n="cookie_link">További információk</a>
+    </span>
+    <div class="cookie-buttons">
+        <button class="cookie-btn-accept" onclick="acceptCookies()" data-i18n="cookie_accept">Elfogadom</button>
+        <button class="cookie-btn-more" onclick="acceptCookies()" data-i18n="cookie_more">Bezár</button>
+    </div>
+</div>
+
+</body>
+</html>

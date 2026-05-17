@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Termékeink - ForTransRek S.R.L</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ForTransRek S.R.L termékei — fűrészáru, tűzifa, rönkfa széles választékban.">
+    <link rel="icon" type="image/png" href="img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul>
+            <li class="back-button">
+                <a href="index.html">← <span data-i18n="back">Vissza</span></a>
+            </li>
+            <li><a href="index.html"><span data-i18n="home">Főoldal</span></a></li>
+            <li><a href="termekeink.html"><span data-i18n="products">Termékeink</span></a></li>
+            <li><a href="szallitas.html"><span data-i18n="transport">Szállítás</span></a></li>
+            <li><a href="kapcsolat.html"><span data-i18n="contact">Kapcsolat</span></a></li>
+            <li class="lang-switch">
+        <button onclick="setLanguage('hu')" class="lang-btn" title="Magyar">🇭🇺</button>
+        <button onclick="setLanguage('ro')" class="lang-btn" title="Română">🇷🇴</button>
+    </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+    <div class="page-hero">
+        <div class="page-badge">
+            <span class="page-badge-icon">🪵</span>
+            <h1 data-i18n="products">Termékeink</h1>
+        </div>
+        <div class="page-badge page-badge-text" data-i18n="products_text">
+            Válogass minőségi faipari termékeink közül — fűrészáru, tűzifa és rönkfa egy helyen.
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 data-i18n="categories_title">Kategóriák</h2>
+        <div class="category-grid">
+            <a href="fureszaru.html" class="category-card">
+                <img src="img/categories/fureszaru.jpeg" alt="Fűrészáru">
+                <div class="category-card-body">
+                    <span class="category-icon">🪚</span>
+                    <h3 data-i18n="cat_lumber">Fűrészáru</h3>
+                    <p data-i18n="cat_lumber_desc">Deszkák, gerendák, gyalult faanyagok</p>
+                </div>
+            </a>
+            <a href="tuzifa.html" class="category-card">
+                <img src="img/categories/tuzifa2.jpeg" alt="Tűzifa">
+                <div class="category-card-body">
+                    <span class="category-icon">🔥</span>
+                    <h3 data-i18n="cat_firewood">Tűzifa</h3>
+                    <p data-i18n="cat_firewood_desc">Száraz és friss tűzifa, házhoz szállítással</p>
+                </div>
+            </a>
+            <a href="ronkfa.html" class="category-card">
+                <img src="img/categories/ronkfa.jpeg" alt="Rönkfa">
+                <div class="category-card-body">
+                    <span class="category-icon">🌳</span>
+                    <h3 data-i18n="cat_logs">Rönkfa</h3>
+                    <p data-i18n="cat_logs_desc">Ipari feldolgozásra alkalmas rönkök</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2 data-i18n="cta_question">Nem találod, amit keresel?</h2>
+            <p data-i18n="cta_text">Vedd fel velünk a kapcsolatot — egyedi igényeket is teljesítünk.</p>
+            <a href="kapcsolat.html" class="cta-button"><span data-i18n="cta_button">Kapcsolatfelvétel</span> →</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>ForTransRek S.R.L</h3>
+        <p data-i18n="footer_desc">Fakitermelés és erdészeti szolgáltatások</p>
+        <p class="footer-copy">© 2026 ForTransRek S.R.L - <span data-i18n="footer_rights">Minden jog fenntartva</span></p>
+    </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script>
+    const lang = localStorage.getItem("lang") || "hu";
+    document.documentElement.lang = lang;
+    applyTranslations(lang);
+
+    function toggleMenu() {
+        document.querySelector("nav ul").classList.toggle("active");
+    }
+
+    // Cookie elfogadás
+function acceptCookies() {
+    const cookieBar = document.getElementById("cookieBar");
+    if (cookieBar) {
+        cookieBar.classList.add("hidden-cookie");
+        localStorage.setItem("cookiesAccepted", "true");
+    }
+}
+
+// Betöltéskor ellenőrizzük
+window.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        const cookieBar = document.getElementById("cookieBar");
+        if (cookieBar) {
+            cookieBar.classList.add("hidden-cookie");
+        }
+    }
+});
+</script>
+
+<!-- COOKIE SÁV -->
+<div class="cookie-bar" id="cookieBar">
+    <span class="cookie-text">
+        🍪 <span data-i18n="cookie_text">Ez az oldal sütiket használ a jobb felhasználói élmény érdekében. Az oldal használatával elfogadod a sütik használatát.</span>
+        <a href="#" data-i18n="cookie_link">További információk</a>
+    </span>
+    <div class="cookie-buttons">
+        <button class="cookie-btn-accept" onclick="acceptCookies()" data-i18n="cookie_accept">Elfogadom</button>
+        <button class="cookie-btn-more" onclick="acceptCookies()" data-i18n="cookie_more">Bezár</button>
+    </div>
+</div>
+
+</body>
+</html>

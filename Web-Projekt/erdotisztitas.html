@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Erdőtisztítás</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ForTransRek S.R.L — Fakitermelés, erdészeti szolgáltatások és faanyag szállítás Románia területén.">
+<link rel="icon" type="image/png" href="img/logo/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li class="back-button">
+    <a href="index.html">← Vissza</a>
+</li>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="termekeink.html">Termékeink</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            <li class="lang-switch">
+        <button onclick="setLanguage('hu')" class="lang-btn" title="Magyar">🇭🇺</button>
+        <button onclick="setLanguage('ro')" class="lang-btn" title="Română">🇷🇴</button>
+    </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <h1>Erdőtisztítás</h1>
+        <p>Erdők karbantartása, tisztítása és előkészítése.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <h3>ForTransRek S.R.L</h3>
+        <p>Fakitermelés és erdészeti szolgáltatások</p>
+        <p class="footer-copy">© 2026 ForTransRek — Minden jog fenntartva.</p>
+    </div>
+</footer>
+
+<!-- COOKIE SÁV -->
+<div class="cookie-bar" id="cookieBar">
+    <span class="cookie-text">
+        🍪 <span data-i18n="cookie_text">Ez az oldal sütiket használ a jobb felhasználói élmény érdekében. Az oldal használatával elfogadod a sütik használatát.</span>
+        <a href="#" data-i18n="cookie_link">További információk</a>
+    </span>
+    <div class="cookie-buttons">
+        <button class="cookie-btn-accept" onclick="acceptCookies()" data-i18n="cookie_accept">Elfogadom</button>
+        <button class="cookie-btn-more" onclick="acceptCookies()" data-i18n="cookie_more">Bezár</button>
+    </div>
+</div>
+
+<script>
+// Cookie elfogadás
+function acceptCookies() {
+    const cookieBar = document.getElementById("cookieBar");
+    if (cookieBar) {
+        cookieBar.classList.add("hidden-cookie");
+        localStorage.setItem("cookiesAccepted", "true");
+    }
+}
+
+// Betöltéskor ellenőrizzük
+window.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("cookiesAccepted") === "true") {
+        const cookieBar = document.getElementById("cookieBar");
+        if (cookieBar) {
+            cookieBar.classList.add("hidden-cookie");
+        }
+    }
+});</script>
+
+</body>
+</html>
